@@ -9,105 +9,112 @@
       crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Bootstrap Theme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <title>Zanshin</title>
 </head>
 
 <body id="home" data-spy="scroll" data-target="#main-nav">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light fixed-top py-4" id="main-nav">
+  <nav class="navbar navbar-expand-md navbar-custom navbar-light bg-white py-1" id="main-nav">
     <div class="container">
       <a href="#home" class="navbar-brand">
-        <img src="img/mlogo.png" width="50" height="50" alt="logo">
-        <h3 class="d-inline align-middle">Mizuxe</h3>
+        <img src="img/Zanshinlogofinal.jpg" width="250" height="auto" alt="logo" class="logo">  
       </a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="navbar-collapse"><span class="navbar-toggler-icon"></span></button>
+      <button class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#meettheauthors" class="nav-link">Meet the authors</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-          
-         
+          <li class="nav-item"><a href="/index.html" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="/services.html" class="nav-link">Services</a></li>
+          <!-- <li class="nav-item"><a href="#casestudies" class="nav-link">Case Studies</a></li> -->
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>         
         </ul>
       </div>
     </div>
   </nav>
  
   <!-- Showcase -->
-  <section id="showcase" class="py-5S">
-    <div class="primary-overlay text-white">
+  <section id="showcase" class="pt-1">
+    <div class="text-info">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 text-center">
+          <div class="col-lg-6">
             <h1 class="display-2 mt-5 pt-5">
-              Do what you dream of...
+              Zanshin Project Services
             </h1>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, sint.</p>
-            <a href="#" class="btn btn-outline-secondary btn-lg text-white">
-              <i class="fas fa-arrow-right"></i> Read More
+            <p class="showcase-para">Professional, flexible services for your preconstruction needs..</p>
+            <a href="#contact" class="btn btn-primary btn-lg text-info">
+              <i class="fas fa-arrow-right"></i> Contact Us
             </a>
           </div>
           <div class="col-lg-6">
-            <img src="img/book.png" alt="" class="img-fluid d-none d-lg-block">
+            <div class="hero-right--box1"></div>
+                <div class="hero-right--box2">
+                    <p class="hero__para">Zanshin Project Services provides an independent, flexible, freelance project management service
+                        for the property and construction industry. Bringing a professional, detailed and technically
+                        competent approach which enables more effective project delivery, reduced risk and improved
+                        cost/programme certainty.
+                    </p>
+                </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Newsletter bit -->
-  <section id="newsletter" class="bg-dark text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <input type="text" class="form-control form-cpntrol-lg mb-resp" placeholder="Enter Name">
-        </div>
-        <div class="col-md-4">
-          <input type="email" class="form-control form-cpntrol-lg mb-resp" placeholder="Enter Email">
-        </div>
-        <div class="col-md-4">
-          <button class="btn btn-primary btn-lg btn-block">
-            <i class="fas fa-envelope-open-o"></i> Subscribe
-          </button>
-        </div>
-      </div>
+  <!-- banner -->
+  <section id="banner" class="d-lg-block">
+    <div class=" row align-items-bottom banner_content py-3">
+        <p>Fuel Retail </p> 
+        <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+        <p>EV Charging </p> 
+        <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+        <p>Roadside Development </p>
+        <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+        <p>Drive Thru' </p>
+        <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+        <p>Multi-site </p>
+        <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+        <p>Commercial development</p>
     </div>
-  </section>
+</section>
 
   <!-- Boxes, -->
-  <section id="boxes" class="py-5">
+  <section id="boxes" class="pt-2 pb-5 bg-light">
     <div class="container">
+      <h2 class="text-center">Services</h2>
       <div class="row">
-        <div class="col-md-3">
-          <div class="card text-center border-primary mb-resp">
+        <div class="col-md-3 col-sm-6">
+          <div class="card text-center bg-info mb-resp">
             <div class="card-body">
-              <h3 class="text-primary">Be Better</h3>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ratione?</p>
+              <h3 class="text-primary">Pre-Construction</h3>
+              <i class="fi-xnsux8-tools-solid text-primary"></i>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
           <div class="card text-center bg-primary text-white mb-resp">
             <div class="card-body">
-              <h3 class="text-white">Be Smarter</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ratione?</p>
+              <h3 class="text-white">Project Management</h3>
+              <i class="fi-cnsuh8-handshake"></i>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card text-center border-primary mb-resp">
+        <div class="col-md-3 col-sm-6">
+          <div class="card text-center bg-info mb-resp">
             <div class="card-body">
-              <h3 class="text-primary">Be Faster</h3>
-              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ratione?</p>
+              <h3 class="text-white">Feasibility Studies</h3>
+              <i class="fi-xnsux8-spreadsheet-solid text-white"></i>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6">
           <div class="card text-center bg-primary text-white">
             <div class="card-body">
-              <h3 class="text-white">Be Stronger</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ratione?</p>
+              <h3 class="text-info pb-3">CDM Services</h3>
+              <i class="fi-xwlux9-share-wide text-info"></i>
             </div>
           </div>
         </div>
@@ -116,199 +123,100 @@
     </div>
   </section>
 
-  <!-- Aboutsection -->
-  <section id="about" class="py-5 text-center bg-light">
+  <!--Case studies  -->
+  <section id="cases" class="cases p-4">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="info-header mb-5">
-            <h1 class="text-primary pb3">
-              Why this book?
-            </h1>
-            <p class="lead pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis eveniet, impedit fugit maiores dicta.</p>
-          </div>
-
-          <!-- ACCORDIAN -->
-          <div id="accordian">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <div href="#collapse1" data-toggle="collapse" data-parent="#accordian">
-                    <i class="fas fa-arrow-circle-down"></i> Get Inspired
-                  </div>
-                </h5>
-              </div>
-              <div id="collapse1" class="collapse show">
-                <div class="card-body">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus libero, doloribus rem quasi architecto tempora quas obcaecati ex ipsa non eos dicta omnis nulla sed distinctio. Consectetur iste est, sit exercitationem ad velit quaerat perferendis a facilis ipsa error nemo at explicabo vitae repudiandae ullam aperiam beatae obcaecati animi voluptas?
-                </div>
-              </div>
-            <div class="card">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <div href="#collapse2" data-toggle="collapse" data-parent="#accordian">
-                    <i class="fas fa-arrow-circle-down"></i> Gain the knowledge
-                  </div>
-                </h5>
-              </div>
-              <div id="collapse2" class="collapse">
-                <div class="card-body">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus libero, doloribus rem quasi architecto tempora quas obcaecati ex ipsa non eos dicta omnis nulla sed distinctio. Consectetur iste est, sit exercitationem ad velit quaerat perferendis a facilis ipsa error nemo at explicabo vitae repudiandae ullam aperiam beatae obcaecati animi voluptas?
-                </div>
-              </div>
-            <div class="card">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <div href="#collapse3" data-toggle="collapse" data-parent="#accordian">
-                    <i class="fas fa-arrow-circle-down"></i> Open your mind
-                  </div>
-                </h5>
-              </div>
-              <div id="collapse3" class="collapse">
-                <div class="card-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus libero, doloribus rem quasi architecto tempora quas obcaecati ex ipsa non eos dicta omnis nulla sed distinctio. Consectetur iste est, sit exercitationem ad velit quaerat perferendis a facilis ipsa error nemo at explicabo vitae repudiandae ullam aperiam beatae obcaecati animi voluptas?
-                </div>
-              </div>
-            </div>
-          </div>
+      <h2 class="text-center">Case Studies</h2>
+      <div class="row py-3">
+        <div class="col-md-6 align-self-center">
+            <h3>Victoria Case Study</h3>
+            <p>Fire destroys Harvest Energy fuel station in Richmond, North Yorkshire, Aug 2020.</p>
+            <p>The rebuild of the fuel station following its demolition was welcomed by residents
+              but had to be in keeping with the Conservation Area around it. The site is 
+              constrained on either side...</p>
+            <a href="https://www.zanshinprojects.co.uk/Victoria Case Study Zanshin.pdf"  target="blank" class="btn btn-outline-primary btn-lg mb-3">Read More</a>
         </div>
+        <div class="col-md-6">
+            <img src="img/Victoriafire.png" alt="picture of site" class="img-fluid">
+        </div>
+    </div>
+    <div class="row py-3">
+      <div class="col-md-6">
+        <img src="img/EVchargers.png" alt="picture of EV installations" class="img-fluid">
       </div>
+      <div class="col-md-6 align-self-center">
+          <h3>bp Pulse</h3>
+          <h5>Electric Vehicle Charging Installations</h5>
+          <p>The integration of Electric Vehicle Charging points onto bp fuel forecourts was 
+            without precedent when Chargemaster, now bp Pulse, was acquired and became 
+            part of bp. The challenge was to bring together....</p>
+          <a href="https://www.zanshinprojects.co.uk/bp Pulse Case Study Zanshin.pdf" target="blank" class="btn btn-outline-primary btn-lg mb-3">Read More</a>
+      </div>
+  </div>
     </div>
   </section>
 
-  <!-- Authors section -->
-  <section id="meettheauthors" class="my-5 text-center">
+  <!-- Testimonials -->
+  <section id="testimonials" class="p-4 text-info bg-light">
     <div class="container">
-      <div class="row">
-        <div class="col">
-          <div class="info-header mb-5">
-            <h1 class="text-primary pb-3">
-              Meet the Authors
-            </h1>
-            <p class="lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione error dolore suscipit ipsa tempora at?
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>Susan Williams</h3>
-              <h5 class="text-miuted">Lead writer</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aut eligendi sapiente asperiores, architecto voluptatum.</p>
-              <div class="d-flex justify-content-center">
-                <div class="p-4">
-                  <a href="http://facebook.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row text-center">
+            <div class="col">
+                <div class="slider">
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">
+                              “Tanya worked for me for approximately 10 years during which time I knew that I could give her any project and it would be handled efficiently and diligently. She has great technical knowledge and her attention to detail enables her to manage complex projects with ease. Her calm systematic approach allows her to come up with pragmatic and cost-effective solutions. Nothing really seems to phase Tanya and she’s able to remain calm and in control when things don’t go to plan. A good communicator with the ability to build good working relationships with all those involved in a project. Would be a strong addition to any project.” 
+                            </p>
+                            <footer class="blockquote-footer">Ian Donald Project Executive, 
+                                <cite title="Company 1">Sevan Multi-Site Solutions</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">
+                              “Incredibly efficient, highly technical, unflappable and detail-oriented, are just a few words and phrases that come to mind when I think about Tanya. I have had the pleasure of working with Tanya for over 15 years, during a period of unprecedented growth in the petrol retailing industry. I am always in awe of Tanya’s technical knowledge and her ability to turn a plan into reality without any fuss or drama. Tanya finds solutions to some of the most complex problems and yet always remains calm on the surface. Tanya’s approachable and empathetic nature means people are on board with her ideas without hesitation - everyone listens and learns from Tanya! Tanya made a dramatic contribution to the success of both the BP/M&S acquisition programme as well as the BP Pulse rollout across forecourts. Tanya is without doubt a true asset to any team or project.”  </p> 
+                              
+                            </p>
+                            <footer class="blockquote-footer">Sharon R Newton,
+                                <cite title="Company 2">Property Manager SGN Retail</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">
+                              “I have worked on projects with tanya for over twenty years, as a geo-environmental consultant providing technical data and assessments for ground conditions associated with fuel/PFS related construction projects. Tanya obviously has an immense amount of experience in this area. Projects are always run smoothly and on time (and presumably on budget). She has a boundless capacity for managing multiple and complex projects (and I’m sure I was only involved with a fraction of her workload). Nothing seems to phase Tanya; when things maybe don’t go quite to plan (as can happen when you are dealing with ground conditions....), there’s no fuss or waving of arms, just a desire to work as a team to ensure a pragmatic and cost effective solution. I have also been struck by how fair Tanya is. This perhaps seems an odd thing to say, but there are a few people in the industry who are just out for themselves; Tanya is not one of those people (although you’ll always need a sharp pencil, as she knows the cost, and value, of (y)our services...). Tanya is a good communicator and understands the value of promoting good working relationships with clients, suppliers and colleagues alike. I have enjoyed working with Tanya on all our previous projects and hope to do so again.“
+                            </p>
+                            <footer class="blockquote-footer">James Edley, 
+                                <cite title="Company 3">Director at Subadra Consulting Ltd</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">
+                              "Tanya has a superb grasp of the issues likely to cause issues in delivery of a project and is tenacious, persuasive and an excellent communicator to ensure everyone is clear and aligned on their expectations." 
+                            </p>
+                            <footer class="blockquote-footer">Barry Wyeth, 
+                                <cite title="Company 4">Managing Director, Wyeth Project Services Ltd</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
                 </div>
-                <div class="p-4">
-                  <a href="http://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://instagram.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>Susan Williams</h3>
-              <h5 class="text-miuted">Lead writer</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aut eligendi sapiente asperiores, architecto voluptatum.</p>
-              <div class="d-flex justify-content-center">
-                <div class="p-4">
-                  <a href="http://facebook.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://instagram.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>Susan Williams</h3>
-              <h5 class="text-miuted">Lead writer</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aut eligendi sapiente asperiores, architecto voluptatum.</p>
-              <div class="d-flex justify-content-center">
-                <div class="p-4">
-                  <a href="http://facebook.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://instagram.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <div class="card-body">
-              <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3">
-              <h3>Susan Williams</h3>
-              <h5 class="text-miuted">Lead writer</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore aut eligendi sapiente asperiores, architecto voluptatum.</p>
-              <div class="d-flex justify-content-center">
-                <div class="p-4">
-                  <a href="http://facebook.com">
-                    <i class="fab fa-facebook"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://twitter.com">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="p-4">
-                  <a href="http://instagram.com">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
+
 
   <!-- Contact -->
-  <section id="contact" class="bg-light py-5">
+  <section id="contact" class="bg-info py-5">
     <div class="container"><div class="row">
       <div class="col-lg-9">
-        <h3>Get in touch</h3>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quisquam.</p>
+        <h3 class="text-primary">Get in touch</h3>
+        <p class="lead text-primary">If you would like more information on what we can provide for you please use the callback form below.</p>
         <form>
           <div class="input-group input-group-lg mb-3">
             <div class="input-group-prepend">
@@ -337,18 +245,25 @@
           <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
         </form>
       </div>
-      <div class="col-lg-3 align-self-center">
-        <img src="img/mlogo.png" alt="" class="img-fluid">
+      <div class="d-md-none d-lg-block col-md-3 align-self-center">
+        <img src="img/zanshinnowords.jpg" alt="" class="img-fluid">
       </div>
     </div>
   </div>
   </section>
 
   <!-- footer -->
-  <footer id="main-footer" class="py-5 bg-primary text-white">
+  <footer id="main-footer" class="py-2 bg-primary text-white">
     <div class="container">
-      <div class="row text-center">
-        <div class="col-md-6 ml-auto">
+      <div class="row"> 
+        <div class="col-lg-9">
+            <h6>Tanya Sargent</h6>
+            <h6>Email: info@zanshinprojects.co.uk</h6>
+            <div class="footer__icons">
+              <a href="https://www.linkedin.com/in/tanya-sargent-beng-ceng-mice-mei-b279a7a3/" class="text-white"><i class="fab fa-linkedin fa-3x"></i></a>
+            </div>
+        </div>  
+        <div class="col-lg-3">
           <p class="lead">
             Copyright &copy;<span id="year"></span>
           </p>
@@ -359,11 +274,13 @@
   
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  
 
   <script>
     // Get the current year for the copyright
@@ -387,6 +304,15 @@
         });
       }
     });
+
+    $('.slider').slick({
+                infinite: true,
+                dots: true,
+                slideToShow: 1,
+                slideToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 4000,
+            });
   </script>
 
 

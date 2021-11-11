@@ -1,0 +1,140 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <title>Zanshin</title>
+</head>
+
+<body id="home" data-spy="scroll" data-target="#main-nav">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-custom navbar-light bg-white py-1" id="main-nav">
+    <div class="container">
+      <a href="#home" class="navbar-brand">
+        <img src="img/Zanshinlogofinal.jpg" width="250" height="auto" alt="logo" class="logo">  
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="/services.html" class="nav-link active">Services</a></li>
+          <!-- <li class="nav-item"><a href="#casestudies" class="nav-link">Case Studies</a></li> -->
+                   
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- Showcase -->
+  <section id="showcase-alt" class="pt-1">
+    <div class="text-info">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="display-4 mt-5 pt-5">
+              Zanshin Project Services
+            </h1>
+            <p class="showcase-para">By Tanya Sargent BEng CEng MICE MEI.</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- banner -->
+    <section id="banner" class="d-lg-block banner-alt">
+        <div class=" row align-items-bottom banner_content py-3">
+            <p>Fuel Retail </p> 
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>EV Charging </p> 
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>Roadside Development </p>
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>Drive Thru' </p>
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>Multi-site </p>
+            <span><i class="fas fa-chevron-circle-right minisym"></i> </span>
+            <p>Commercial development</p>
+        </div>
+    </section>
+
+    <!-- Success message -->
+    <section id="success py-5">
+        <div class="container py-5">
+            <div class="col">
+                <h2 class="text-info text-center">Thankyou for your enquiry, we will be in touch shortly</h2>
+            </div>
+        </div>
+    </section>
+
+  <!-- footer -->
+  <footer id="main-footer" class="py-2 bg-primary text-white">
+    <div class="container">
+      <div class="row"> 
+        <div class="col-lg-9">
+            <h6>Tanya Sargent</h6>
+            <h6>Email: info@zanshinprojects.co.uk</h6>
+            <div class="footer__icons">
+              <a href="https://www.linkedin.com/in/tanya-sargent-beng-ceng-mice-mei-b279a7a3/" class="text-white"><i class="fab fa-linkedin fa-3x"></i></a>
+                
+            </div>
+        </div>  
+        <div class="col-lg-3">
+          <p class="lead">
+            Copyright &copy;<span id="year"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+  
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // INit scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
+
+     // Smooth Scrolling
+     $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+
+  
+  </script>
+
+
+</body>
+</html>
