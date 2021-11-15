@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -49,7 +50,7 @@
               <i class="fas fa-arrow-right"></i> Contact Us
             </a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-none d-md-block">
             <div class="hero-right--box1"></div>
                 <div class="hero-right--box2">
                     <p class="hero__para">Zanshin Project Services provides an independent, flexible, freelance project management service
@@ -82,43 +83,45 @@
 </section>
 
   <!-- Boxes, -->
-  <section id="boxes" class="pt-2 pb-5 bg-light">
+  <section id="boxes" class="p-4 bg-light">
     <div class="container">
       <h2 class="text-center">Services</h2>
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="card text-center bg-info mb-resp">
-            <div class="card-body">
-              <h3 class="text-primary">Pre-Construction</h3>
-              <i class="fi-xnsux8-tools-solid text-primary"></i>
+      
+        <div class="row py-3">
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center bg-info mb-resp card-size">
+              <div class="card-body">
+                <h3 class="text-primary box__writing">Pre-Construction</h3>
+                <i class="fi-xnsux8-tools-solid text-primary icon__size"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="card text-center bg-primary text-white mb-resp">
-            <div class="card-body">
-              <h3 class="text-white">Project Management</h3>
-              <i class="fi-cnsuh8-handshake"></i>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center bg-primary text-white mb-resp card-size">
+              <div class="card-body">
+                <h3 class="text-white box__writing">Project Management</h3>
+                <i class="fi-cnsuh8-handshake icon__size"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="card text-center bg-info mb-resp">
-            <div class="card-body">
-              <h3 class="text-white">Feasibility Studies</h3>
-              <i class="fi-xnsux8-spreadsheet-solid text-white"></i>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center bg-info mb-resp card-size">
+              <div class="card-body">
+                <h3 class="text-white box__writing">Feasibility Studies</h3>
+                <i class="fi-xnsux8-spreadsheet-solid text-white icon__size"></i>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="card text-center bg-primary text-white">
-            <div class="card-body">
-              <h3 class="text-info pb-3">CDM Services</h3>
-              <i class="fi-xwlux9-share-wide text-info"></i>
+          <div class="col-md-3 col-sm-6">
+            <div class="card text-center bg-primary text-white mb-resp card-size">
+              <div class="card-body">
+                <h3 class="text-info box__writing">CDM Services</h3>
+                <i class="fi-xwlux8-share-wide text-info icon__size"></i>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </div>        
+      
       </div>
     </div>
   </section>
@@ -137,7 +140,7 @@
             <a href="https://www.zanshinprojects.co.uk/Victoria Case Study Zanshin.pdf"  target="blank" class="btn btn-outline-primary btn-lg mb-3">Read More</a>
         </div>
         <div class="col-md-6">
-            <img src="img/Victoriafire.png" alt="picture of site" class="img-fluid">
+            <img src="img/IMG_20200814_153254-678x381.jpg" alt="picture of site" class="img-fluid cases__img-size">
         </div>
     </div>
     <div class="row py-3">
@@ -160,7 +163,7 @@
   <section id="testimonials" class="p-4 text-info bg-light">
     <div class="container">
         <h2 class="text-center">Testimonials</h2>
-        <div class="row text-center">
+        <div class="row text-center py-3">
             <div class="col">
                 <div class="slider">
                     <div>
@@ -217,14 +220,14 @@
       <div class="col-lg-9">
         <h3 class="text-primary">Get in touch</h3>
         <p class="lead text-primary">If you would like more information on what we can provide for you please use the callback form below.</p>
-        <form>
+        <form action="process.php" method="POST">
           <div class="input-group input-group-lg mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">
                 <i class="fas fa-user"></i>
               </span>
             </div>
-            <input type="text" class="form-control" placeholder="Name">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Name">
           </div>
           <div class="input-group input-group-lg mb-3">
             <div class="input-group-prepend">
@@ -232,7 +235,7 @@
                 <i class="fas fa-envelope"></i>
               </span>
             </div>
-            <input type="text" class="form-control" placeholder="Email">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
           </div>
           <div class="input-group input-group-lg mb-3">
             <div class="input-group-prepend">
@@ -240,12 +243,12 @@
                 <i class="fas fa-pencil-alt"></i>
               </span>
             </div>
-            <textarea type="text" class="form-control" placeholder="Message"></textarea> 
+            <textarea type="text" name="message" id="message" class="form-control" placeholder="Message"></textarea> 
           </div>
           <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
         </form>
       </div>
-      <div class="d-md-none d-lg-block col-md-3 align-self-center">
+      <div class="d-none d-lg-block col-md-3 align-self-center">
         <img src="img/zanshinnowords.jpg" alt="" class="img-fluid">
       </div>
     </div>
